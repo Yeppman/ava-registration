@@ -1,0 +1,137 @@
+.ballHive-intro-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ballHive-intro-image{
+    height: 200px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+   
+}
+.ballHive-intro-logo{
+    position: relative;
+    height: inherit;
+    width: 600px;
+}
+
+.ballHive-intro-text-content{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.ballHive-intro-heading{
+    font-size: 30px;
+    text-align: center;
+}
+
+.ballHive-intro-text{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Cards Explaning Bal Hive Merit */
+
+.ballHive-cards-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  
+}
+
+.ballHive-cards-container .ballHive-cards-list{
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-image-icon{
+    display: block;
+    justify-items: center;
+}
+
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-image-icon .ballHive-cards-image{
+    height: 250px;
+    width: 100%;
+}
+
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-content{
+    padding: 10px;
+    display: block;
+    justify-items: center;
+}
+
+
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-content .ballHive-cards-content-text{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-content .ballHive-cards-content-button-container{
+    display: block ;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ballHive-cards-container .ballHive-cards-list .ballHive-cards-content .ballHive-cards-content-button{
+margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(6, 155, 38);
+  border-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 48px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+}
+
+@media (max-width:569px){
+    .ballHive-intro-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .ballHive-intro-image{
+        height: 100px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    .ballHive-intro-logo{
+        position: relative;
+        height: inherit;
+        width: 100%;
+    }
+    
+    .ballHive-intro-text-content{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .ballHive-intro-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .ballHive-intro-text{
+        font-size: 20px;
+        text-align: center;
+    }
+}

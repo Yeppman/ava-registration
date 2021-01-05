@@ -1,0 +1,254 @@
+:root {
+  --url: (
+    "https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+  );
+}
+
+/* Kenny bee changes */
+
+.page-boxes-grid{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+}
+
+.page-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-box-card{
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  padding: 1rem;
+  background-color: rgb(63, 58, 58);
+  /* height: 400px; */
+  border-bottom: 2px solid rgb(27, 182, 221);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.page-box-card-header{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.page-box-card-text{
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.page-box-heading-header{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.page-box-heading-text{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.page-box-sizer{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sponsors-tab {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 2rem;
+}
+
+.sponsors-tab img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+.sponsors-section {
+  background-color: #fafafa;
+}
+
+.mission-tab{
+  background-color: green;
+}
+
+/* Ends here */
+.headerBox {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background: 
+  /* linear-gradient(
+      45deg,
+      rgba(10, 71, 13, 0.9) 0%,
+      rgba(64, 62, 66, 0.9) 100%
+    ), */
+    url("https://newsletter-images-precise.s3.eu-west-2.amazonaws.com/Earth+Grey.png")
+      center center no-repeat;
+  background-size: cover;
+}
+
+.headerBox2 {
+  height: 900px;
+  background-color: rgb(255, 255, 255);
+  background:
+   linear-gradient(
+      45deg,
+      rgba(43, 75, 43, 0.959) 0%,
+      rgba(23, 235, 76, 0.795) 100%
+    ),
+    url('https://newsletter-images-precise.s3.eu-west-2.amazonaws.com/Avalanche/Sports+Avalanche.png')
+      center center no-repeat;
+  background-size: cover;
+}
+
+.teamBox {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background: 
+  /* linear-gradient(
+      45deg,
+      rgba(10, 71, 13, 0.9) 0%,
+      rgba(64, 62, 66, 0.9) 100%
+    ), */
+    url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1030&q=80")
+      center center no-repeat;
+  background-size: cover;
+}
+
+.ballHiveBox {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background: linear-gradient(
+      45deg,
+      rgba(6, 59, 9, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1030&q=80")
+      center center no-repeat;
+  background-size: cover;
+}
+
+.shiftBox {
+  /* padding: 100px; */
+}
+
+/* FONTS */
+
+.openingBox {
+  padding: 100px 0px 0px;
+}
+
+.openingHead {
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  font-family: "Boing", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.openingText {
+  color: white;
+  font-size: 17px;
+}
+
+.openingButton-box {
+  margin-top: 20px;
+}
+
+.openingButton {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(26, 206, 41);
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 48px;
+  color: rgb(26, 206, 41);
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.openingBox2 {
+  /* padding: 100px ; */
+  margin-bottom: 10px;
+}
+
+.openingHead2 {
+  font-size: 65px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: "Boing", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.openingText2 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: "Boing", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.openingButton-box2 {
+  margin-top: 20px;
+}
+
+.openingButton2 {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(9, 138, 20);
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 48px;
+  color: rgb(9, 138, 20);
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+}
+/* Ends Here */
+
+.text-center {
+  text-align: center;
+  color: black;
+  font-size: 2.25rem;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.email .phone{
+  margin-top: 10px;
+}
+
+@media (max-width: 769px) {
+  .headerBox2 {
+    height: auto
+  }
+}
+
+@media (max-width: 569px) {
+  .headerBox2 {
+    height: auto
+  }
+}
+
+@media (max-width: 360px) {
+  .headerBox2 {
+    height: auto
+  }
+}

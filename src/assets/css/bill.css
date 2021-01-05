@@ -1,0 +1,91 @@
+/*Billing Cards */
+
+.bill-card-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+    height: 300px;
+    margin: 90px 300px 10px 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 0px solid green;
+    
+  }
+  
+.bill-card{
+    justify-content: center;
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+ .bill-list-title p{ 
+    font-size: 17px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+
+
+  .bill-text p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: turquoise;
+  }
+  
+
+.bill-link{
+    background-color: rgb(71, 89, 255);
+   
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    height: 48px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+  }
+
+
+
+  /*Billing Cards ends here */
+  
+
+  /* Media Queries */
+@media (max-width: 700px){
+
+  .bill-card-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+    height: 300px;
+    margin: 50px 20px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 0px solid green;
+    
+  }
+
+  .bill-list-title p{ 
+    font-size: 14px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+}

@@ -1,0 +1,239 @@
+
+.section-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(2, 1fr);
+    padding: 20px 0px 20px 0px;   
+}
+
+.paymentForm-area{
+    max-width: 500px;
+    margin-top: 90px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 20px ;
+    border: 4px solid #f3f6f3;
+}
+
+.paymentForm-content{
+    margin-top: 20px;
+    
+}
+
+
+
+.QR-flexContain{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.flexContain{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+
+.paymentBox-flex{
+    padding-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    max-width: 500px;
+}
+.payBox-headinf{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.payBox-text{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.copyAddressButton{
+    margin-top: 20px;
+    padding: 20px; 
+    background-color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    color: rgb(38, 124, 38);
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(38, 124, 38);
+}
+
+
+/* PayOpts */
+
+.paymentOptionBoxes-container{
+    margin-top: 20px;
+    display: flex;
+    height: 130px;
+    padding: 20px;
+    border: 1px solid #f3f6f3;
+    flex-direction: column;
+    border-radius: 4px  ;
+}
+
+.paymentOptionBoxes-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px ;
+}
+
+.paymentOptionBoxes-flex{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+
+}
+
+.centerHeading{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.centertext{
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.paymentOptionBoxes-image-box{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentOptionBoxes-image{
+    height: inherit;
+    object-fit: contain;
+}
+
+.paymentOptionBoxes-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentOptionBoxes-content-text{
+    text-align: center;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+  
+@media screen and (max-height: 800px){
+   
+    
+}
+
+.transactionPortal{
+    max-width: 300px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+.transactionPortal-column{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.transactionPortal-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.transactionPortal-text-left{
+    width: 50%;
+    margin: 3px;
+    text-align: left;
+}
+
+.transactionPortal-text-right{
+    width: 50%;
+    margin: 3px;
+    text-align: right;
+   
+}
+
+.transactionPortal-text-left .transactionPortal-text{
+    font-size: 15px;
+}
+
+.transactionPortal-text-right .transactionPortal-text{
+    font-size: 14px;
+}
+
+.transactionPortal-text{
+    font-size: 20px;
+    text-align: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transactionPortal-address-flex{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.transactionPortal-address-flex .transactionPortal-address-text-box{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionPortal-address-text{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.transactionPortal-address .transactionPortal-address-icon-box{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionPortal-address-icon{
+    height: 20px;
+    object-fit: contain;
+}

@@ -1,0 +1,140 @@
+.paymentPage-flex{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.paymentPage-flex-right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.paymentPage-image-box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    
+}
+
+.paymentPage-image{
+    height: inherit;
+    object-fit: contain;
+  
+}
+
+.payBox-center-section{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 32px 16px;
+    
+}
+
+.payBox-heading-content{
+    display: block;
+}
+
+.payBox-heading-content h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.payBox-heading-content p{
+    font-size: 18px;
+    text-align: center;
+    padding:10px
+}
+
+.payBox-cards-container  {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat( 2,1fr);
+    margin-bottom: 40px;
+  }
+  
+.payBox-cards-container  .payBox-cards-list  {
+    display: block;
+    text-decoration: none; 
+    background-color: white;
+}
+
+
+
+.payBox-cards-container  .payBox-cards-list .payBox-cards-box{
+    width: 300px; 
+    height: 130px; 
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); 
+    padding: 20px; 
+    border-radius: 4px ;
+    display: flex;
+}
+
+
+
+.payBox-cards-container  .payBox-cards-list .payBox-cards-box .payBox-cards-logo{
+    width: 35%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+}
+
+.payBox-cards-container  .payBox-cards-list .payBox-cards-box .payBox-cards-logo .payBox-cards-Image{
+    max-width: 300px;
+    height: 50px;
+}
+
+.payBox-cards-container  .payBox-cards-list .payBox-cards-box .payBox-cards-content{
+   
+    padding: 5px;
+    width: 65%;
+    position: relative;
+    -ms-flex-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 5px;
+}
+
+.payBox-cards-container  .payBox-cards-list .payBox-cards-box  .payBox-cards-content .payBox-cards-text{
+    text-align: right;
+    font-size: 18px;
+}
+
+
+  
+@media only screen and (max-width: 320px) {
+    .paymentPage-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .payBox-center-section{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        padding: 32px 16px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        
+    }
+    
+    .payBox-cards-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+}

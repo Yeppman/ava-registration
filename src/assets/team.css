@@ -1,0 +1,237 @@
+.team-container-fit {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.team-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1004px;
+}
+
+.team-list-box {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  /* box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1); */
+  transition: all 0.3s ease-in-out;
+}
+
+.team-container .team-list-box .team-box-content {
+  padding: 20px;
+  display: block;
+}
+
+.team-container .team-list-box .team-box-content .team-user-avatar {
+  height: 200px;
+}
+
+.team-container
+  .team-list-box
+  .team-box-content
+  .team-user-avatar
+  .team-user-avatar-image {
+  height: inherit;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.team-container .team-list-box .team-text-content .team-text-heading {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 5px 0px 5px 0px;
+}
+
+.team-container .team-list-box .team-box-content .team-text-content .team-text {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 5px 0px 5px 0px;
+}
+
+/* Portfolio */
+
+.startUpTeam-section {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.startUpTeam-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 1004px;
+}
+
+.startUpTeam-container .startUpTeam-list {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  /* box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1); */
+  transition: all 0.3s ease-in-out;
+}
+
+.startUpTeam-container .startUpTeam-list .startUpTeam-box {
+  /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);  */
+  padding: 20px;
+  border-radius: 4px;
+  display: block;
+}
+
+.startUpTeam-container
+  .startUpTeam-list
+  .startUpTeam-box
+  .startUpTeam-image-box {
+  /* width: 35%; */
+  position: relative;
+  /* -ms-flex-align: center; */
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.startUpTeam-container
+  .startUpTeam-list
+  .startUpTeam-box
+  .startUpTeam-image-box
+  .startUpTeam-image {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.startUpTeam-container
+  .startUpTeam-list
+  .startUpTeam-box
+  .startUpTeam-box-text-content {
+  /* width: 65%; */
+  position: relative;
+  /* -ms-flex-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 5px;
+}
+
+.startUpTeam-container
+  .startUpTeam-list
+  .startUpTeam-box
+  .startUpTeam-box-text-content
+  .startUpTeam-box-heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(16, 172, 24);
+  text-align: center;
+}
+
+.startUpTeam-container
+  .startUpTeam-list
+  .startUpTeam-box
+  .startUpTeam-box-text-content
+  .startUpTeam-box-text {
+  font-size: 19px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.startUpTeam-box-socials {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+
+.startUpTeam-box-socials .startUpTeam-box-socials-image-content {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.startUpTeam-box-socials
+  .startUpTeam-box-socials-image-content
+  .startUpTeam-box-socials-image {
+  height: 40px;
+}
+
+/*  */
+
+.team-box-content{
+    margin-top: 2rem;
+}
+
+.team-boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 3rem;
+}
+
+.team-box {
+  margin-top: 1rem;
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.team-box-text-b {
+  color: rgb(21, 245, 96);
+}
+
+.team-header-content{
+  margin: 60px 0px 0px 0px;
+}
+
+.team-header-heading {
+  font-size: 2rem;
+  color: rgb(16, 172, 24);
+  text-align: center;
+}
+
+.team-header-paragraqh {
+  text-align: center;
+  line-height: 2.0rem;
+  margin-top: 7px;
+}
+
+.team-box-header {
+  color: rgb(16, 172, 24);
+  padding: 7px;
+}
+
+.team-box-button{
+    background: none;
+    border: 2px solid rgb(16, 172, 24);
+    padding: 1rem;
+    color:  rgb(16, 172, 24);
+    border-radius: 14px;
+    margin-top: 1rem;
+}
+
+.team-box-button:hover {
+  color: yellow;
+}
+
+.team-box .startUpTeam-image-box .startUpTeam-image {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 50%;
+}

@@ -1,0 +1,243 @@
+.displayBoxes-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.displayBoxes-list{
+    display: block;
+    justify-content: center;
+    /* align-self:center ; */
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.displayBoxes-box .displayBoxes-list  .displayBoxes-text-content{
+    margin:0px;
+}
+
+.displayBoxes-box .displayBoxes-list .displayBoxes-text-content .displayBoxes-heading{
+    margin: 0px 0px 0px 0px;
+    font-size: 23px;
+    text-align: center;
+   padding: 10px;
+   font-weight: bold;
+   color:rgb(255, 255, 255)
+}
+
+.displayBoxes-box .displayBoxes-list .displayBoxes-text-content .displayBoxes-text{
+    font-size: 14px;
+    text-align: center;
+   padding: 10px;
+   color: rgb(255, 255, 255)
+}
+
+.displayBoxes-box .displayBoxes-list .displayBoxes-text-content .displayBoxes-icon{
+    margin: 10px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+    display : flex;
+    align-self:center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.displayBoxes-box .displayBoxes-list .displayBoxes-text-content .displayBoxes-icon .displayBoxes-icon-image{
+    height: 100px;
+
+} 
+
+
+
+/* Sign Up is Coming Section */
+
+
+/* Center Heading Text */
+
+.centerText-section{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+     
+}
+
+.centerText-section .centerText-field{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    
+}
+
+.centerText-section .centerText-field .centerText-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+    
+}
+
+.centerText-section .centerText-field .centerText-container-header{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;;
+}
+
+.centerText-section .centerText-field .centerText-container-text{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;;
+}
+
+
+
+/* Center Text heading ends here */
+
+/* Center Heading Text 2 */
+
+.centerText-section2{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+     
+}
+
+.centerText-section2 .centerText-field{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 1.1rem;
+    
+}
+
+.centerText-section2 .centerText-field .centerText-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+   padding: 100px;
+    
+    
+}
+.centerText-section2 .centerText-field .centerText-container-header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    color: white;
+    font-family: sans-serif;;
+}
+
+.centerText-section2 .centerText-field .centerText-container-text{
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;;
+}
+
+
+/* Regitser Now */
+
+.signUp-section{
+    padding: 0;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    background:  url('https://a.slack-edge.com/80588/spacesuit/source/images/backgrounds/bg-halftone-black-20p.png') center center no-repeat;
+    background-color: #049444;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.signUp-section .signUp-field{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    
+}
+
+.signUp-section .signUp-field .signUp-container{
+    
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    
+}
+
+.signUp-section .signUp-field .signUp-container-header{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: "HCo Gotham",sans-serif;;
+}
+.d{
+    display: inline-block;
+    white-space: nowrap;
+    flex-basis: auto;
+    width: auto;
+}
+
+.extra-button {
+
+    border-radius: 4px;
+    text-align: center;
+    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    text-decoration: none;
+    padding:  20px;
+    width: 200px;
+    color:green;
+    background-color: white;
+
+}
+ .signUp-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: 700;
+    line-height: 1.28571429;
+    letter-spacing: .8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 19px 40px 20px;
+    width: 100%;
+}
+    /* Register Now ends here */
+
+
+/* Ends here */
