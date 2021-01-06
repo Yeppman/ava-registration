@@ -30,8 +30,8 @@ const SectionBoxes = () => {
   const sendData = async (values) => {
    
     // const host = "https://avalanche-backend.herokuapp.com";
-    const host = 'http://127.0.0.1:5000'
-    // const host = 'https://avalanche-node.herokuapp.com'
+    // const host = 'http://127.0.0.1:5000'
+    const host = 'https://avalanche-node.herokuapp.com'
     const endpoint = host + `/core/reg-user/`;
 
     const fName =  values['fName']
