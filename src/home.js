@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom'
 export default function HomePage() {
     return ( 
         <>
-            <div className="playerReg-stack">
+            <div className='center-container'>
+                <div className="playerReg-stack">
                 <div className="playerReg-list">
                     <p className="playerReg-heading">
                      Sign Up as a Player
@@ -49,6 +50,7 @@ export default function HomePage() {
                     </button>
                             </Link>
                 </div>
+            </div>
             </div>
         </>
     )

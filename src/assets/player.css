@@ -3,6 +3,14 @@
   flex-direction: column;
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  padding:3px;
+  max-width: 500px;
+}
+
 
 .generalHeading{
   font-size: 30px;
@@ -71,7 +79,7 @@
   
   .playerReg-stack{
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(1,1fr);
       grid-gap:20px;
       padding:20px
   }

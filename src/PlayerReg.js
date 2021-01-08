@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Input, Form, Upload, message , Select} from "antd";
+import { Input, Form, Upload, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
 
@@ -9,7 +9,7 @@ const { Dragger } = Upload;
 
 
 const SectionBoxes = () => {
-    const [isPlayer, setisPlayer] = useState(false);
+    const [isPlayer, setisPlayer] = useState(true);
     const [registeringCategory, setRegisteringCategory] = useState("Player");
     const [videoFile, setVideo] = useState([])
     const Coach = "Coach";
@@ -103,7 +103,7 @@ const SectionBoxes = () => {
                 // message.error(`${info.file.name} file upload failed.`);
             }
         },
-    }; 
+    };
 
 
 
@@ -149,11 +149,11 @@ const SectionBoxes = () => {
 
                         <Form.Item name="Gender">
                             <Select
-                            placeholder="Your Gender"
-                            size="large" >
-                         <Option value="jack">Male</Option>
-                            <Option value="lucy">Female</Option>
-                        </Select>
+                                placeholder="Your Gender"
+                                size="large" >
+                                <Option value="jack">Male</Option>
+                                <Option value="lucy">Female</Option>
+                            </Select>
                         </Form.Item>
 
                         <Form.Item rules={[{ required: true }]} name="Gender">
@@ -171,7 +171,28 @@ const SectionBoxes = () => {
 
                             />
                         </Form.Item>
+                        <>
+                            {isPlayer ? (
+                                <>
+                                    <Dragger {...props}>
+                                        <p className="ant-upload-drag-icon">
+                                            <InboxOutlined />
+                                        </p>
+                                        <p className="ant-upload-text">
+                                            Click or drag file to this area to upload
+                        </p>
+                                        <p className="ant-upload-hint">
+                                            Support for a single or bulk upload. Strictly prohibit
+                                            from uploading company data or other band files
+                        </p>
+                                    </Dragger>
 
+
+                                </>
+                            ) : (
+                                    <></>
+                                )}
+                        </>
                         <div>
                             <button
                                 type="submit"
