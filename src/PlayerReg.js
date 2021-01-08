@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Input, Form, Upload, message } from "antd";
+import { Input, Form, Upload, message , Select} from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
 
-
+const { Option } = Select;
 const { Dragger } = Upload;
 
 
@@ -60,7 +60,7 @@ const SectionBoxes = () => {
         fd.append("Phone", Phone);
         fd.append('Position', Position)
         fd.append("VideoUpload", VideoUpload);
-        fd.append("Type", Category);
+        fd.append("Type", 'Player');
         fd.append('Nationality', Nationality)
         fd.append("age", Age);
 
@@ -103,7 +103,7 @@ const SectionBoxes = () => {
                 // message.error(`${info.file.name} file upload failed.`);
             }
         },
-    };
+    }; 
 
 
 
@@ -120,68 +120,6 @@ const SectionBoxes = () => {
                         className=""
                         onFinish={sendData}
                     >
-                        <Form.Item>
-                            <div className="reg-category-container">
-                                <h3 className="reg-category-heading">
-
-                                </h3>
-                                <ul className="reg-category-list">
-                                    <li onClick={userIsPlayer} className="reg-category-item">
-                                        <div className="reg-category-icon">
-                                            <GiSoccerBall />
-                                        </div>
-                                        <p className="reg-category-text">Player</p>
-                                    </li>
-
-                                    <li
-                                        onClick={() => {
-                                            dontUserPlayer(Coach);
-                                        }}
-                                        className="reg-category-item"
-                                    >
-                                        <div className="reg-category-icon">
-                                            <GiSoccerBall />
-                                        </div>
-                                        <p className="reg-category-text">Scout</p>
-                                    </li>
-
-                                    <li
-                                        onClick={() => {
-                                            dontUserPlayer(Scout);
-                                        }}
-                                        className="reg-category-item"
-                                    >
-                                        <div className="reg-category-icon">
-                                            <GiSoccerBall />
-                                        </div>
-                                        <p className="reg-category-text">Coach</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {isPlayer ? (
-                                <>
-                                    <Dragger {...props}>
-                                        <p className="ant-upload-drag-icon">
-                                            <InboxOutlined />
-                                        </p>
-                                        <p className="ant-upload-text">
-                                            Click or drag file to this area to upload
-                        </p>
-                                        <p className="ant-upload-hint">
-                                            Support for a single or bulk upload. Strictly prohibit
-                                            from uploading company data or other band files
-                        </p>
-                                    </Dragger>
-
-
-                                </>
-                            ) : (
-                                    <></>
-                                )}
-                        </Form.Item>
-
                         <Form.Item rules={[{ required: true }]} name="fName">
                             <Input
                                 size="large"
@@ -207,6 +145,13 @@ const SectionBoxes = () => {
 
                         <Form.Item rules={[{ required: true }]} name="Nationality">
                             <Input size="large" placeholder="Nationality?" enterButton />
+                        </Form.Item>
+
+                        <Form.Item name="">
+                            <Select size="large" >
+                         <Option value="jack">Male</Option>
+                            <Option value="lucy">Female</Option>
+                        </Select>
                         </Form.Item>
 
                         <Form.Item rules={[{ required: true }]} name="Gender">
