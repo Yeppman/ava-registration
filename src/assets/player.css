@@ -98,7 +98,7 @@
   }
 
   .playerReg-text{
-        font-size: 17px;
+        font-size: 15px;
       text-align: left;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
@@ -109,10 +109,11 @@
   .playerReg-btn {
     background-color: #075c0b;
     color: white;
-    padding: 16px 20px;
+    /* padding: 16px 20px; */
     margin: 8px 0;
     border: none;
     width: 50%;
+    padding : 0.5rem 2rem;
     border-radius: 4px;
     
   }
