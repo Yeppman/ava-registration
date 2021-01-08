@@ -156,13 +156,12 @@ const SectionBoxes = () => {
                             </Select>
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Gender">
-                            <Input size="large" placeholder="Gender?" enterButton />
-                        </Form.Item>
+                   
 
                         <Form.Item rules={[{ required: true }]} name="Age">
                             <Input size="large" placeholder="Age?" enterButton />
                         </Form.Item>
+
 
                         <Form.Item rules={[{ required: true }]} name="Position">
                             <Input

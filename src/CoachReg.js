@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Input, Form, Upload, message } from "antd";
+import { Input, Form, Upload, message , Select} from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
 
-
+const { Option } = Select;
 const { Dragger } = Upload;
 
 
@@ -114,6 +114,7 @@ const SectionBoxes = () => {
                             />
                         </Form.Item>
 
+                        
                         <Form.Item rules={[{ required: true }]} name="Email">
                             <Input size="large" placeholder="Your Email?" enterButton />
                         </Form.Item>
@@ -126,9 +127,15 @@ const SectionBoxes = () => {
                             <Input size="large" placeholder="Nationality?" enterButton />
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Gender">
-                            <Input size="large" placeholder="Gender?" enterButton />
+                        <Form.Item name="Gender">
+                            <Select
+                                placeholder="Your Gender"
+                                size="large" >
+                                <Option value="jack">Male</Option>
+                                <Option value="lucy">Female</Option>
+                            </Select>
                         </Form.Item>
+
 
                         <Form.Item rules={[{ required: true }]} name="Age">
                             <Input size="large" placeholder="Age?" enterButton />
@@ -140,7 +147,7 @@ const SectionBoxes = () => {
                                 htmltype="submit"
                                 className="registerbtn"
                             >
-                                Sign  Up
+                                Sign Up
                             </button>
                         </div>
 
