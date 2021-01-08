@@ -12,6 +12,24 @@
 }
 
 
+/* Success Text */
+.successBox{
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.successHeading{
+    text-align: center;
+    font-size: 25px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.successText{
+    text-align: center;
+    font-size: 17px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .generalHeading{
   font-size: 30px;
   display: flex;

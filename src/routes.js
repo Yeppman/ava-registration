@@ -4,10 +4,12 @@ import ScoutRegistation from './ScotReg'
 import PlayerRegistration from './PlayerReg'
 import CoachRegistration from './CoachReg'
 import HomePage from './home'
+import SuccessPage from './SuccessPage'
 
 const BaseRouter = () => (
     <>
         <Route exact path="/" component={HomePage} />
+           <Route exact path="/success" component={SuccessPage} />
         <Route exact path="/scout-registration" component={ScoutRegistation} />{" "}
         <Route exact path="/coach-registration" component={CoachRegistration} />{" "}
         <Route exact path="/player-registration" component={PlayerRegistration} />{" "}
