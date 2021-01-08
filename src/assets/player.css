@@ -30,6 +30,21 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+ /* Set a style for the submit button */
+  .successBox-btn {
+    background-color: #075c0b;
+    color: white;
+    /* padding: 16px 20px; */
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    padding : 0.5rem 2rem;
+    border-radius: 4px;
+    
+  }
+
+
 .generalHeading{
   font-size: 30px;
   display: flex;

@@ -4,7 +4,9 @@ import React from 'react';
 export default  function SuccessPage() {
     return (
         <>
-            <div className="center-container">
+            <div
+            style={{marginTop:300}}
+            className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
                         Your Registration Was Successful
@@ -12,11 +14,13 @@ export default  function SuccessPage() {
                     <p className="successText">
                         Welcome Aboard
                     </p>
-                    <button
-                        href="https://ava-sigma.vercel.app"
-                        className="playerReg-btn">
+                    <a  href="https://ava-sigma.vercel.app">
+                     <button
+                        className="successBox-btn">
                         Home
                     </button>
+                    </a>
+                   
 
                 </div>
 
