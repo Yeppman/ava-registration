@@ -13,19 +13,27 @@ export default function HomePage() {
                         Sign Up today for a player 
                         for people to erkkslk 4reiuhudsn
                     </p>
+                    
+                        <Link to="/player-registration">
+                    <button className="playerReg-btn">
+                        Sign   Up
+                    </button>
+                     </Link>
 
                 </div>
                <div className="playerReg-list">
                <p className="playerReg-heading">
-                     Sign Up as a Player
+                     Sign Up as a Scout
                     </p>
                     <p className="playerReg-text">
                         Sign Up today for a player 
                         for people to erkkslk 4reiuhudsn
                     </p>
                     <Link to="/scout-registration">
-                        Scouts
-                            </Link>
+                    <button className="playerReg-btn">
+                        Sign   Up
+                    </button>
+                     </Link>
                 </div>
                 <div className="playerReg-list">
                 <p className="playerReg-heading">
@@ -36,7 +44,9 @@ export default function HomePage() {
                         for people to erkkslk 4reiuhudsn
                     </p>
                     <Link to="/coach-registration">
-                        Coach
+                         <button className="playerReg-btn">
+                        Sign Up
+                    </button>
                             </Link>
                 </div>
             </div>

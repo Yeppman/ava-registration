@@ -113,7 +113,7 @@ const SectionBoxes = () => {
                 <div className="">
                     <div className="">
                         <p className="generalHeading">
-                            Sign Up Today
+                            Sign Up As Player
                       </p>
                     </div>
                     <Form
@@ -147,8 +147,10 @@ const SectionBoxes = () => {
                             <Input size="large" placeholder="Nationality?" enterButton />
                         </Form.Item>
 
-                        <Form.Item name="">
-                            <Select size="large" >
+                        <Form.Item name="Gender">
+                            <Select
+                            placeholder="Your Gender"
+                            size="large" >
                          <Option value="jack">Male</Option>
                             <Option value="lucy">Female</Option>
                         </Select>

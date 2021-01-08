@@ -83,24 +83,35 @@
   }
  
   .playerReg-heading{
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       text-align: left;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .playerReg-text{
-        font-size: 20px;
-      font-weight: bold;
+        font-size: 17px;
       text-align: left;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
   }
 
-  
+ 
+   /* Set a style for the submit button */
+  .playerReg-btn {
+    background-color: #075c0b;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 50%;
+    border-radius: 4px;
+    
+  }
+
   /* Set a style for the submit button */
   .registerbtn {
-    background-color: #4CAF50;
+    background-color: #075c0b;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -224,3 +235,18 @@
       transform: scaleY(0);
     }
   }
+
+
+  @media only screen and (max-width: 600px) {
+
+  
+  .playerReg-stack{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:20px;
+      padding:20px
+  }
+
+
+}
+
