@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Input, Form, Upload, message , Select} from "antd";
+import { Input, Form, Upload, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
+import { countriesArr } from './countries'
+
 
 const { Option } = Select;
 const { Dragger } = Upload;
@@ -90,14 +92,14 @@ const SectionBoxes = () => {
                 <div className="">
                     <div className="">
                         <p className="generalHeading">
-                            Sign Up As a Coach
+                            Sign Up As  Others
                       </p>
                     </div>
                     <Form
                         className=""
                         onFinish={sendData}
                     >
-                        
+
 
                         <Form.Item rules={[{ required: true }]} name="fName">
                             <Input
@@ -114,7 +116,7 @@ const SectionBoxes = () => {
                             />
                         </Form.Item>
 
-                        
+
                         <Form.Item rules={[{ required: true }]} name="Email">
                             <Input size="large" placeholder="Your Email?" enterButton />
                         </Form.Item>
@@ -123,17 +125,26 @@ const SectionBoxes = () => {
                             <Input size="large" placeholder="Phone Number?" enterButton />
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Nationality">
-                            <Input size="large" placeholder="Nationality?" enterButton />
+
+                        <Form.Item
+                            rules={[{ required: true }]} name="Nationality"
+                        >
+                            <Select
+                                placeholder="Nationality"
+                                size="large">
+                                {
+                                    countriesArr.map(i => (
+                                        <>
+                                            <Option value={i}> {i} </Option>
+                                        </>
+                                    ))
+                                }
+                            </Select>
                         </Form.Item>
 
-                        <Form.Item name="Gender">
-                            <Select
-                                placeholder="Your Gender"
-                                size="large" >
-                                <Option value="jack">Male</Option>
-                                <Option value="lucy">Female</Option>
-                            </Select>
+
+                        <Form.Item rules={[{ required: true }]} name="Gender">
+                            <Input size="large" placeholder="Gender ,Please Specify?" enterButton />
                         </Form.Item>
 
 
@@ -160,7 +171,7 @@ const SectionBoxes = () => {
     );
 };
 
-export default function CoachRegistration() { 
+export default function CoachRegistration() {
     return (
         <>
             {/* <NavbarTwo /> */}

@@ -3,6 +3,7 @@ import axios from "axios";
 import { Input, Form, Upload, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
+import { countriesArr } from './countries'
 
 const { Option } = Select;
 const { Dragger } = Upload;
@@ -143,16 +144,28 @@ const SectionBoxes = () => {
                             <Input size="large" placeholder="Phone Number?" enterButton />
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Nationality">
-                            <Input size="large" placeholder="Nationality?" enterButton />
-                        </Form.Item>
-
-                           <Form.Item rules={[{ required: true }]} name="Gender">
+                        <Form.Item rules={[{ required: true }]} name="Gender">
                             <Input size="large" placeholder="Gender ,Please Specify?" enterButton />
                         </Form.Item>
 
 
-                   
+                        <Form.Item
+                            rules={[{ required: true }]} name="Nationality"
+                        >
+                            <Select 
+                            placeholder="Nationality"
+                            size="large">
+                                {
+                                    countriesArr.map(i => (
+                                        <>
+                                            <Option value={i}> {i} </Option>
+                                        </>
+                                    ))
+                                }
+                            </Select>
+                        </Form.Item>
+
+
 
                         <Form.Item rules={[{ required: true }]} name="Age">
                             <Input size="large" placeholder="Age?" enterButton />
@@ -166,28 +179,35 @@ const SectionBoxes = () => {
 
                             />
                         </Form.Item>
-                        <>
-                            {isPlayer ? (
-                                <>
-                                    <Dragger {...props}>
-                                        <p className="ant-upload-drag-icon">
-                                            <InboxOutlined />
-                                        </p>
-                                        <p className="ant-upload-text">
-                                            Click or drag file to this area to upload
+
+                        <Form.Item
+
+                        >
+                            <>
+                                {isPlayer ? (
+                                    <>
+                                        <Dragger {...props}>
+                                            <p className="ant-upload-drag-icon">
+                                                <InboxOutlined />
+                                            </p>
+                                            <p className="ant-upload-text">
+                                                Click or drag file to this area to upload
                         </p>
-                                        <p className="ant-upload-hint">
-                                            Support for a single or bulk upload. Strictly prohibit
-                                            from uploading company data or other band files
+                                            <p className="ant-upload-hint">
+                                            Please upload a video of you doing something interesting
+                                                with the ball (Video should not be more than 5MB)”
                         </p>
-                                    </Dragger>
+                                        </Dragger>
 
 
-                                </>
-                            ) : (
-                                    <></>
-                                )}
-                        </>
+                                    </>
+                                ) : (
+                                        <></>
+                                    )}
+                            </>
+                        </Form.Item>
+
+
                         <div>
                             <button
                                 type="submit"

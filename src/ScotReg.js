@@ -3,6 +3,8 @@ import axios from "axios";
 import { Input, Form, Upload, message  ,Select} from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
+import { countriesArr } from './countries'
+
 
 const { Option } = Select;
 
@@ -125,9 +127,22 @@ const SectionBoxes = () => {
                             <Input size="large" placeholder="Phone Number?" enterButton />
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Nationality">
-                            <Input size="large" placeholder="Nationality?" enterButton />
+                        <Form.Item
+                            rules={[{ required: true }]} name="Nationality"
+                        >
+                            <Select 
+                            placeholder="Nationality"
+                            size="large">
+                                {
+                                    countriesArr.map(i => (
+                                        <>
+                                            <Option value={i}> {i} </Option>
+                                        </>
+                                    ))
+                                }
+                            </Select>
                         </Form.Item>
+
 
 
                         <Form.Item rules={[{ required: true }]} name="Age">
