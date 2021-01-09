@@ -9,7 +9,11 @@ export default function SuccessPage() {
                 className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
+                          Welcome to BallHive
+                           <br/>
                         Your registration was successful
+                       
+                      
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
