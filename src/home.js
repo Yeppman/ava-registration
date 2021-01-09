@@ -1,56 +1,56 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function HomePage() {
-    return ( 
+    return (
         <>
             <div className='center-container'>
                 <div className="playerReg-stack">
-                <div className="playerReg-list">
-                    <p className="playerReg-heading">
-                     Sign Up as a Player
+                    <div className="playerReg-list">
+                        <p className="playerReg-heading">
+                            Sign Up as a Player
                     </p>
-                    <p className="playerReg-text">
-                        Sign Up today for a player 
-                        for people to erkkslk 4reiuhudsn
-                    </p>
-                    
-                        <Link to="/player-registration">
-                    <button className="playerReg-btn">
-                        Sign   Up
-                    </button>
-                     </Link>
+                        <p className="playerReg-text">
+                            Start your journey to showcase your talent and get scouted.
 
-                </div>
-               <div className="playerReg-list">
-               <p className="playerReg-heading">
-                     Sign Up as a Scout
                     </p>
-                    <p className="playerReg-text">
-                        Sign Up today for a player 
-                        for people to erkkslk 4reiuhudsn
-                    </p>
-                    <Link to="/scout-registration">
-                    <button className="playerReg-btn">
-                        Sign   Up
+
+                        <Link to="/player-registration">
+                            <button className="playerReg-btn">
+                                Sign   Up
                     </button>
-                     </Link>
-                </div>
-                <div className="playerReg-list">
-                <p className="playerReg-heading">
-                     Sign Up as a Player
+                        </Link>
+
+                    </div>
+                    <div className="playerReg-list">
+                        <p className="playerReg-heading">
+                            Sign Up as a Scout
                     </p>
-                    <p className="playerReg-text">
-                        Sign Up today for a player 
-                        for people to erkkslk 4reiuhudsn
+                        <p className="playerReg-text">
+                            Start your journey to discover talented football player
+
                     </p>
-                    <Link to="/coach-registration">
-                         <button className="playerReg-btn">
-                        Sign Up
+                        <Link to="/scout-registration">
+                            <button className="playerReg-btn">
+                                Sign   Up
                     </button>
-                            </Link>
+                        </Link>
+                    </div>
+                    <div className="playerReg-list">
+                        <p className="playerReg-heading">
+                            Sign Up as others
+                    </p>
+                        <p className="playerReg-text">
+
+                            Sign up here if you are not a player or a scout.
+                    </p>
+                        <Link to="/coach-registration">
+                            <button className="playerReg-btn">
+                                Sign Up
+                    </button>
+                        </Link>
+                    </div>
                 </div>
-            </div>
             </div>
         </>
     )

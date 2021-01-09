@@ -89,7 +89,7 @@ const SectionBoxes = () => {
     const props = {
         name: 'file',
         multiple: true,
-        action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+        action: 'https://avalanche-node.herokuapp.com',
         onChange(info) {
             const { status } = info.file;
             console.log(info.file)
