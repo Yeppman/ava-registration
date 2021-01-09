@@ -145,7 +145,7 @@ const SectionBoxes = () => {
                         </Form.Item>
 
                         <Form.Item rules={[{ required: true }]} name="Gender">
-                            <Input size="large" placeholder="Gender ,Please Specify?" enterButton />
+                            <Input size="large" placeholder="Gender(Please Specify)" enterButton />
                         </Form.Item>
 
 
@@ -181,12 +181,16 @@ const SectionBoxes = () => {
                         </Form.Item>
 
                         <Form.Item
-
+                            label="Please upload a video 
+                            of you doing something interesting
+                                      with a ball (Video should not be more than 5MB)"
                         >
-                            <>
+                            <div >
                                 {isPlayer ? (
                                     <>
-                                        <Dragger {...props}>
+                                        <Dragger
+                                        style={{marginTop:15}}
+                                        {...props}>
                                             <p className="ant-upload-drag-icon">
                                                 <InboxOutlined />
                                             </p>
@@ -194,8 +198,7 @@ const SectionBoxes = () => {
                                                 Click or drag file to this area to upload
                         </p>
                                             <p className="ant-upload-hint">
-                                            Please upload a video of you doing something interesting
-                                                with the ball (Video should not be more than 5MB)”
+                                            
                         </p>
                                         </Dragger>
 
@@ -204,7 +207,7 @@ const SectionBoxes = () => {
                                 ) : (
                                         <></>
                                     )}
-                            </>
+                            </div>
                         </Form.Item>
 
 

@@ -27,7 +27,7 @@ export default function HomePage() {
                             Sign Up as a Scout
                     </p>
                         <p className="playerReg-text">
-                            Start your journey to discover talented football player
+                            Start your journey to discover talented football players
 
                     </p>
                         <Link to="/scout-registration">
