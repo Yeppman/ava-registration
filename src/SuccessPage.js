@@ -5,11 +5,11 @@ export default function SuccessPage() {
     return (
         <>
             <div
-                style={{ marginTop: 270 }}
+                style={{ marginTop: 240 }}
                 className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
-                        Your registration was successfull
+                        Your registration was successful
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
