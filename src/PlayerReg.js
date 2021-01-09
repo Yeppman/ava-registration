@@ -72,7 +72,7 @@ const SectionBoxes = () => {
         };
         axios.post(endpoint, fd).then((res) => {
             if (res.status === 200) {
-                message.success("Registration Successfully");
+                // message.success("Registration Successfully");
                 window.location.replace('/success')
             } else {
                 message.error("Registration Failed ");

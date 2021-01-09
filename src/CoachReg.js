@@ -73,8 +73,8 @@ const SectionBoxes = () => {
         };
         axios.post(endpoint, fd).then((res) => {
             if (res.status === 200) {
-                message.success("Registration Successfully");
-
+                // message.success("Registration Successfully");
+                window.location.replace('/success')
             } else {
                 message.error("Registration Failed ");
             }
@@ -144,7 +144,7 @@ const SectionBoxes = () => {
 
 
                         <Form.Item rules={[{ required: true }]} name="Gender">
-                            <Input size="large" placeholder="Gender ,Please Specify?" enterButton />
+                            <Input size="large" placeholder="Gender (Please Specify)" enterButton />
                         </Form.Item>
 
 
