@@ -180,10 +180,16 @@ const SectionBoxes = () => {
                             />
                         </Form.Item>
 
-                        <Form.Item
-                            label="Please upload a video 
+                            <p 
+                            style={{fontSize:14}}
+                            className="">
+                                Please upload a video 
                             of you doing something interesting
-                                      with a ball (Video should not be more than 5MB)"
+                               with a ball (Video should not be more than 5MB)
+                            
+                            </p>
+
+                        <Form.Item
                         >
                             <div >
                                 {isPlayer ? (
