@@ -9,10 +9,8 @@ export default function SuccessPage() {
                 className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
-                          Welcome to BallHive
+                          Welcome to BallHive!
                            <br/>
-                        Your registration was successful
-                       
                       
                     </p>
                     <p className="successText">
@@ -20,10 +18,10 @@ export default function SuccessPage() {
                         showcase themselves and help scouts discover talents.
                        <br />
 
-                    This registration is to keep you updated about our progress, give you an early
+                    <b>NOTE :</b>This registration is to keep you updated about our progress, give you an early
                     advantage upon our product launch, and also bring special opportunities to you.
                     </p>
-                    <a href="https://ava-sigma.vercel.app">
+                    <a href="https://sportsavalanche.com/">
                         <button
                             className="successBox-btn">
                             Home
