@@ -17,16 +17,18 @@ export default function SuccessPage() {
                             Your registration was successful
                         </p>
 
-     
+
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
                         showcase their talents and help scouts discover talents.
-                       <br />  <br />
-
-                        <b>NOTE:</b>This registration is to keep you 
-                        updated about our progress, give you an early advantage upon our product
-                         launch, and also bring special opportunities to you.
+                       <br />
+                       This registration is to keep you updated about our progress, give you an early advantage upon our product launch,
+                        and also bring special opportunities to you.
+                        <br />
+                        <br />
+                        <b>NOTE:</b>This is a pre-product sign up to keep you updated about our product launch.
+                         
                     </p>
                     <a href="https://sportsavalanche.com/">
                         <button
