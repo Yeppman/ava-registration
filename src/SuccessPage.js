@@ -5,7 +5,7 @@ export default function SuccessPage() {
     return (
         <>
             <div
-                style={{ marginTop: 240 }}
+                style={{ marginTop: 100 }}
                 className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
