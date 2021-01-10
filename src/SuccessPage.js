@@ -9,7 +9,7 @@ export default function SuccessPage() {
                 className="center-container">
                 <div className="successBox">
                     <p className="successHeading">
-                          Welcome to BallHive!
+                          Welcome to BallHive
                            <br/>
                           <p
                           style={{fontSize:20}}
@@ -21,10 +21,11 @@ export default function SuccessPage() {
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
-                        showcase talents and help scouts discover talents.
-                       <br />
-                       <br />
-                        <b>NOTE:</b> This is a pre-product sign up to keep you updated about our product launch.
+                        showcase themselves and help scouts discover talents.
+                       <br/>  <br/>
+
+                   <b>NOTE:</b> This registration is to keep you updated about our progress, give you an early
+                    advantage upon our product launch, and also bring special opportunities to you.
                     </p>
                     <a href="https://sportsavalanche.com/">
                         <button
