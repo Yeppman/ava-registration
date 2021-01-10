@@ -24,9 +24,8 @@ export default function SuccessPage() {
                         showcase their talents and help scouts discover talents.
                        <br />  <br />
 
-                        <b>NOTE:</b> This registration is to keep you updated 
-                        about our progress, give you an early advantage upon our
-                         product launch, and also bring special opportunities to you.
+                        <b>NOTE:</b> NOTE: This is a pre-product sign up
+                         to keep you updated about our product launch.
                     </p>
                     <a href="https://sportsavalanche.com/">
                         <button
