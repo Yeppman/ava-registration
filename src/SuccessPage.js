@@ -16,7 +16,7 @@ export default function SuccessPage() {
                             className="successHeading">
                             Your registration was successful
                         </p>
-
+ 
 
                     </p>
                     <p className="successText">
