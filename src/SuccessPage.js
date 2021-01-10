@@ -21,7 +21,8 @@ export default function SuccessPage() {
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
-                        showcase themselves and help scouts discover talents.
+                        showcase talents and help scouts discover talents.
+                       <br />
                        <br />
                         <b>NOTE:</b> This is a pre-product sign up to keep you updated about our product launch.
                     </p>
