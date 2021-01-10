@@ -27,7 +27,7 @@ export default function SuccessPage() {
                         and also bring special opportunities to you.
                         <br />
                         <br />
-                        <b>NOTE:</b>This is a pre-product sign up to keep you updated about our product launch.
+                        <b>NOTE:</b> This is a pre-product sign up to keep you updated about our product launch.
                          
                     </p>
                     <a href="https://sportsavalanche.com/">
