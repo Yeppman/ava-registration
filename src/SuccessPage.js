@@ -17,7 +17,7 @@ export default function SuccessPage() {
                             Your registration was successful
                         </p>
 
-
+     
                     </p>
                     <p className="successText">
                         Thank you for registering with us. We are currently building our mobile app with all the features to help players
