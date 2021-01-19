@@ -104,7 +104,7 @@ const SectionBoxes = () => {
                     >
                         
 
-                        <Form.Item rules={[{ required: true }]} name="fName">
+                        {/* <Form.Item rules={[{ required: true }]} name="fName">
                             <Input
                                 size="large"
                                 placeholder="Your First Name?"
@@ -117,12 +117,12 @@ const SectionBoxes = () => {
                                 placeholder="Your Last Name?"
                                 enterButton
                             />
-                        </Form.Item>
+                        </Form.Item> */}
 
                         <Form.Item rules={[{ required: true }]} name="Email">
                             <Input size="large" placeholder="Your Email?" enterButton />
                         </Form.Item>
-
+{/* 
                         <Form.Item rules={[{ required: true }]} name="Phone">
                             <Input size="large" placeholder="Phone Number?" enterButton />
                         </Form.Item>
@@ -141,7 +141,7 @@ const SectionBoxes = () => {
                                     ))
                                 }
                             </Select>
-                        </Form.Item>
+                        </Form.Item> */}
 
 
 

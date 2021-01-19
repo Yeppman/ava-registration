@@ -104,24 +104,24 @@ const SectionBoxes = () => {
                         <Form.Item rules={[{ required: true }]} name="fName">
                             <Input
                                 size="large"
-                                placeholder="Your First Name?"
+                                placeholder="Your  Name?"
                                 enterButton
                             />
                         </Form.Item>
-                        <Form.Item rules={[{ required: true }]} name="lName">
+                        {/* <Form.Item rules={[{ required: true }]} name="lName">
                             <Input
                                 size="large"
                                 placeholder="Your Last Name?"
                                 enterButton
                             />
-                        </Form.Item>
+                        </Form.Item> */}
 
 
                         <Form.Item rules={[{ required: true }]} name="Email">
                             <Input size="large" placeholder="Your Email?" enterButton />
                         </Form.Item>
 
-                        <Form.Item rules={[{ required: true }]} name="Phone">
+                        {/* <Form.Item rules={[{ required: true }]} name="Phone">
                             <Input size="large" placeholder="Phone Number?" enterButton />
                         </Form.Item>
 
@@ -140,17 +140,17 @@ const SectionBoxes = () => {
                                     ))
                                 }
                             </Select>
-                        </Form.Item>
+                        </Form.Item> */}
 
 
-                        <Form.Item rules={[{ required: true }]} name="Gender">
+                        {/* <Form.Item rules={[{ required: true }]} name="Gender">
                             <Input size="large" placeholder="Gender (Please Specify)" enterButton />
                         </Form.Item>
 
 
                         <Form.Item rules={[{ required: true }]} name="Age">
                             <Input size="large" placeholder="Age?" enterButton />
-                        </Form.Item>
+                        </Form.Item> */}
 
                         <div>
                             <button
