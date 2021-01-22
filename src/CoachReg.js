@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+
+
+import Footer from './section/footer'
+import Navbar from './section/Navbar'
+
 import { Input, Form, Upload, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
@@ -139,12 +144,13 @@ const SectionBoxes = () => {
 export default function CoachRegistration() {
     return (
         <>
-            {/* <NavbarTwo /> */}
+         <Navbar/>
             <div className="playSignUp-container">
                 <div className="playSignUp-form-fields">
                     <SectionBoxes />
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }
