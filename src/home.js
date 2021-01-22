@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from './section/footer'
+import Navbar from './section/Navbar'
 
 const scoutImage = 'https://unsplash.com/photos/a7bBJZmdqK4'
 const playerImage = 'https://images.unsplash.com/photo-1519474186793-82838e537b79?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fHNvY2NlciUyMHBsYXllcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
@@ -11,6 +12,7 @@ const othersImage = 'https://images.unsplash.com/photo-1531861218190-f90c89febf6
 export default function HomePage() {
     return (
         <>
+        <Navbar/>
             <div className='center-container'>
                 <div className="playerReg-stack">
                     <div className="playerReg-list bg1">
