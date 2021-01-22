@@ -1,12 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from './section/footer'
+
+const scoutImage = 'https://unsplash.com/photos/a7bBJZmdqK4'
+const playerImage = 'https://images.unsplash.com/photo-1519474186793-82838e537b79?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fHNvY2NlciUyMHBsYXllcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+const othersImage = 'https://images.unsplash.com/photo-1531861218190-f90c89febf69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c29jY2VyJTIwZmllbGR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+
+
 
 export default function HomePage() {
     return (
         <>
             <div className='center-container'>
                 <div className="playerReg-stack">
-                    <div className="playerReg-list">
+                    <div className="playerReg-list bg1">
                         <p className="playerReg-heading">
                             Sign Up as a Player
                     </p>
@@ -22,7 +29,7 @@ export default function HomePage() {
                         </Link>
 
                     </div>
-                    <div className="playerReg-list">
+                    <div className="playerReg-list bg2">
                         <p className="playerReg-heading">
                             Sign Up as a Scout
                     </p>
@@ -36,7 +43,7 @@ export default function HomePage() {
                     </button>
                         </Link>
                     </div>
-                    <div className="playerReg-list">
+                    <div className="playerReg-list bg3">
                         <p className="playerReg-heading">
                             Sign Up as Others
                     </p>
@@ -52,6 +59,8 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
+            <Footer/>
         </>
     )
 }

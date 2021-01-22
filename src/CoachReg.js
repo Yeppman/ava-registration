@@ -108,49 +108,14 @@ const SectionBoxes = () => {
                                 enterButton
                             />
                         </Form.Item>
-                        {/* <Form.Item rules={[{ required: true }]} name="lName">
-                            <Input
-                                size="large"
-                                placeholder="Your Last Name?"
-                                enterButton
-                            />
-                        </Form.Item> */}
+                    
 
 
-                        <Form.Item rules={[{ required: true }]} name="Email">
-                            <Input size="large" placeholder="Your Email?" enterButton />
+                            <Form.Item rules={[{ required: true }]} name="Age">
+                            <Input size="large" placeholder="Organization or Club ?" enterButton />
                         </Form.Item>
 
-                        {/* <Form.Item rules={[{ required: true }]} name="Phone">
-                            <Input size="large" placeholder="Phone Number?" enterButton />
-                        </Form.Item>
-
-
-                        <Form.Item
-                            rules={[{ required: true }]} name="Nationality"
-                        >
-                            <Select
-                                placeholder="Nationality"
-                                size="large">
-                                {
-                                    countriesArr.map(i => (
-                                        <>
-                                            <Option value={i}> {i} </Option>
-                                        </>
-                                    ))
-                                }
-                            </Select>
-                        </Form.Item> */}
-
-
-                        {/* <Form.Item rules={[{ required: true }]} name="Gender">
-                            <Input size="large" placeholder="Gender (Please Specify)" enterButton />
-                        </Form.Item>
-
-
-                        <Form.Item rules={[{ required: true }]} name="Age">
-                            <Input size="large" placeholder="Age?" enterButton />
-                        </Form.Item> */}
+                       
 
                         <div>
                             <button
