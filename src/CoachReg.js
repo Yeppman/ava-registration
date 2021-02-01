@@ -9,7 +9,7 @@ import { Input, Form, Upload, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { GiSoccerBall } from "react-icons/gi";
 import { countriesArr } from './countries'
-
+ 
 
 const { Option } = Select;
 const { Dragger } = Upload;
@@ -104,22 +104,30 @@ const SectionBoxes = () => {
                         className=""
                         onFinish={sendData}
                     >
-
-
-                        <Form.Item rules={[{ required: true }]} name="fName">
+    <Form.Item rules={[{ required: true }]} name="fName">
                             <Input
                                 size="large"
-                                placeholder="Your  Name?"
+                                placeholder="Your First Name?"
                                 enterButton
                             />
                         </Form.Item>
-                    
 
-
+                        <Form.Item rules={[{ required: true }]} name="lName">
+                            <Input
+                                size="large"
+                                placeholder="Your Last Name?"
+                                enterButton
+                            />
+                        </Form.Item>
+ 
                             <Form.Item rules={[{ required: true }]} name="Age">
                             <Input size="large" placeholder="Organization or Club ?" enterButton />
                         </Form.Item>
 
+
+                        <Form.Item rules={[{ required: true }]} name="Email">
+                            <Input size="large" placeholder="Your Email?" enterButton />
+                        </Form.Item>
                        
 
                         <div>
